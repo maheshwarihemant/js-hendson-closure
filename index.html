@@ -24,6 +24,10 @@ alert(counter());
 alert(counter());
 alert(counter());"
     </h3>
+    <p>Reason: The value of counter will Increase with respect to how many times it is called, because
+        the counter function, is getting updated as soon as it is called another time.</p>
+    
+    
 <hr> 
 <h3>Q.2 = "let count = 0;
 (function () {
@@ -32,7 +36,12 @@ alert(counter());"
     console.log(count); // What is logged?
   }
   console.log(count); // What is logged?
-})();"</h3>   
+})();"</h3> 
+    <p>Reason: when console.log(count) was count first time, there it matched the if condition, and when it was called 
+        second time it searched the value which was out of the function scope so it accessed the let variable of 
+        count i.e 0.</p>
+    
+    
 <hr>
 <h3>Q.3 = "for (var i = 0; i < 3; i++) {
   setTimeout(function log() {
